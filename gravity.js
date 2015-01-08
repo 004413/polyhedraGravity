@@ -49,5 +49,5 @@ for(var i=0;i<linesToDraw.length;i++){
 }
 var normal = canvas.path(parseLine(LEFT_MARGIN,CANVAS_VERT_SIZE-BOT_MARGIN,LEFT_MARGIN,TOP_MARGIN)).attr({'stroke-width':LINE_WIDTH}).attr({'stroke-linecap':'round'}).attr({'arrow-end':'classic-medium-medium'}).attr({'stroke':'#FFFFFF'}); 
 var normalLabel = canvas.text(LEFT_MARGIN,TOP_MARGIN-TEXT_VERT_SIZE,'Normal').attr({'stroke':'#FFFFFF'}).attr({'font-family':'Ubuntu'});
-var ground = canvas.path(parseLine(LEFT_MARGIN,CANVAS_VERT_SIZE-BOT_MARGIN,CANVAS_HORZ_SIZE-RIGHT_MARGIN,CANVAS_VERT_SIZE-BOT_MARGIN)).attr({'stroke-width':LINE_WIDTH}).attr({'stroke-linecap':'round'}).attr({'stroke':'#FFFFFF'}); 
+var ground = canvas.path(parseLine(0,CANVAS_VERT_SIZE-BOT_MARGIN,CANVAS_HORZ_SIZE-RIGHT_MARGIN,CANVAS_VERT_SIZE-BOT_MARGIN)).attr({'stroke-width':LINE_WIDTH}).attr({'stroke-linecap':'round'}).attr({'stroke':'#FFFFFF'}); 
 var dodecaText = canvas.text(LEFT_MARGIN+Math.sqrt(Math.pow(secants['dodecaVertex']*(CANVAS_VERT_SIZE-BOT_MARGIN-TOP_MARGIN),2)-Math.pow(CANVAS_VERT_SIZE-BOT_MARGIN-TOP_MARGIN,2))+textDeviation['dodecaVertex'],TOP_MARGIN-5*TEXT_VERT_SIZE,'Dodecahedron/').attr({'stroke':colors['dodecaVertex']});
